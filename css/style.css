@@ -1,0 +1,61 @@
+/* this is a css comment */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/*css syntax:
+selector {
+  property: value;
+  property: value;
+  
+} */
+
+/* type selector */
+
+p { /* select all <p> */
+font-size: 16px; /* 16px, ?pt, 100%, 1em*/
+
+line-height: 1.5em;
+}
+figcaption{
+  /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia,"Times New Roman",serif*/
+  font: normal, 0.75em/1.5em, Georgia, "Times New Roman", serif;
+  color:rgb(31,188,223);
+  text-align: right;
+}
+
+/* class selectors (applied to as many elements as you like) */
+
+.milk-text { /* selects elements eith milk text*/
+font: bold 2.6em Oswald, cursive;
+color:white;
+text-shadow: 0 2px 3px #000;
+
+}
+ 
+ /* id selector, only one */
+ #logo {
+   background-color: red;
+ }
+ 
+ /* descendant selector */
+ 
+ #logo h1 { /* selects h1 if id="logo" */ 
+ font: helvetica;
+   
+ }
+ 
+ /* psuedo selector */
+ 
+ #details a:link,a:visited {
+   color:black;
+   text-decoration: none;
+ }
+ #details a:hover {
+   color:black;
+   text-decoration: underline;
+ }
+ #details a:active{
+   color:red;
+ }
