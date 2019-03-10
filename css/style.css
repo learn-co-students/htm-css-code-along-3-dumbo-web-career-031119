@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps:400,900');
+
+/* CSS Syntax:
+
+selectors {
+    property: value;        You can put as many as you like, and end each line with a ;
+    property: value;
+}
+
+*/
+
+/* Type selector */
+
+p { /* select all <p> */
+    font-size: 16px; /* 16px, ?pt, percentages, or 1em, pts are browser dependent, 16px = 1em */
+    line-height: 1.5em;
+}
+
+/*Next is going to be a figcaption selector for the caption on figures*/
+
+figcaption {
+    /*font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    This single statement below is equal to writing the 3 lines above*/
+    font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+    color: #777777;
+    text-align: right
+}
+
+/* We're going to use google fonts and use the import method in line 1*/
+
+/* Class selector (applied to as many elements as you like) 
+While type selector is good for classifying one kind of element, class selector can be sprinkled around
+*/
+
+.milk-text { /* will select elements with class="milk-text" */
+    font: bold 2.6em 'Elsie Swash Caps', cursive;
+    color: white;
+    text-shadow: 0 2px 3px #000000;
+}
+
+/*Now we can apply this class to elements, lets add this class to h2 Featured Listings in real-estate-listings*/
+
+/* ID selector (apply to one unique element per page) 
+Let's make a box to surround our logo w/ a div tag and give it an id of logo 
+id selectors start with a # symbol */
+
+#logo {
+    background: aqua;
+}
+
+/* Descendent Selector  This will select descendent elements within a tag*/
+
+#logo h1 { /* selects <h1> if inside the id="logo" */
+    font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psuedo Selector 
+Will select elements based on their relationship with other elements or an event state, such as links
+in their various event states */
+
+#details a:link, #details a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#details a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#details a:active {
+    color: red;
+}
